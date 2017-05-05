@@ -74,7 +74,8 @@ public class MiddleTierResource {
     @Path("/rss/user/{user}")
     @Produces({MediaType.APPLICATION_JSON})
     public Response fetchSubscriptions (final @PathParam("user") String user) {
-    	
+    	for(int i =0;i<1000000;i++)
+    		System.out.println(i);
         // Start timer
         Stopwatch stopwatch = getRSSStatsTimer.start();
 
@@ -99,6 +100,9 @@ public class MiddleTierResource {
     public Response subscribe (
             final @QueryParam("url") String url,
             final @PathParam("user") String user) {
+    	
+    	for(int i =0;i<1000000;i++)
+    		System.out.println(i);
 
         // Start timer
         Stopwatch stopwatch = addRSSStatsTimer.start();
@@ -125,7 +129,8 @@ public class MiddleTierResource {
     public Response unsubscribe (
             final @QueryParam("url") String url,
             final @PathParam("user") String user) {
-
+    	for(int i =0;i<1000000;i++)
+    		System.out.println(i);
         // Start timer
         Stopwatch stopwatch = delRSSStatsTimer.start();
 
