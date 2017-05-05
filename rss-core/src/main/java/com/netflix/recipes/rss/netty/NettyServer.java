@@ -137,6 +137,8 @@ public final class NettyServer implements Closeable {
 			ChannelFuture serverChannelFuture = serverBootstrap.bind(new InetSocketAddress(host, port));
 			logger.info("Started netty server {}:{}", host, port);
 
+			int change =1;
+			
 			return serverChannelFuture;
 		}
 	}
