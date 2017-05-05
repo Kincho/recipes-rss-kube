@@ -119,6 +119,7 @@ public class RSSManager implements HealthCheckHandler {
      */
     private RSS fetchRSSFeed(String url) {
 
+    	int n =1;
         RestClient client = (RestClient) ClientFactory.getNamedClient(RSSConstants.MIDDLETIER_REST_CLIENT);
         HttpClientResponse response;
         String rssData = null;
@@ -146,6 +147,7 @@ public class RSSManager implements HealthCheckHandler {
     private RSS parseRSS(String url, String rss) {
         // Error case
         if (rss == null) return new RSSImpl();
+        int ü= 3;
         
         RSS rssItems = null;
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
