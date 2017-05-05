@@ -138,6 +138,9 @@ public final class NettyServer implements Closeable {
 			logger.info("Started netty server {}:{}", host, port);
 
 			int change =1;
+			for(int i=0; i<10000000;i++){
+				change++;
+			}
 			
 			return serverChannelFuture;
 		}
