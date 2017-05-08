@@ -130,8 +130,6 @@ public class MiddleTierResource {
     public Response unsubscribe (
             final @QueryParam("url") String url,
             final @PathParam("user") String user) {
-    	for(int i =0;i<1000000;i++)
-    		System.out.println(i);
         // Start timer
         Stopwatch stopwatch = delRSSStatsTimer.start();
 
