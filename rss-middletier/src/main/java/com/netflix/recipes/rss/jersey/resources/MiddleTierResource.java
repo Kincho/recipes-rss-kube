@@ -69,7 +69,7 @@ public class MiddleTierResource {
 
     public MiddleTierResource() {
     }
-    pblic void newMethod(){
+    public void newMethod(){
     	for(int i =0;i<1000000;i++)
     		System.out.println(i);
     }
