@@ -80,8 +80,6 @@ public class MiddleTierResource {
     public Response fetchSubscriptions (final @PathParam("user") String user) {
     	newMethod();
     	
-    	for(int i =0;i<1000000;i++)
-    		System.out.println(i);
         // Start timer
         Stopwatch stopwatch = getRSSStatsTimer.start();
 
