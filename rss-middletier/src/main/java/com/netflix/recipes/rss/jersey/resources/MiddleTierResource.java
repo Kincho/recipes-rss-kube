@@ -69,11 +69,16 @@ public class MiddleTierResource {
 
     public MiddleTierResource() {
     }
+    pblic void newMethod(){
+    	for(int i =0;i<1000000;i++)
+    		System.out.println(i);
+    }
 
     @GET
     @Path("/rss/user/{user}")
     @Produces({MediaType.APPLICATION_JSON})
     public Response fetchSubscriptions (final @PathParam("user") String user) {
+    	newMethod();
     	
     	for(int i =0;i<1000000;i++)
     		System.out.println(i);
